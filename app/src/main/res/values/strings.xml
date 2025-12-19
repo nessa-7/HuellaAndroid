@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Huella</string>
+
+    <string-array name="Energias">
+        <item>Km</item>
+        <item>Kw</item>
+        <item>Comidas</item>
+
+    </string-array>
+</resources>
