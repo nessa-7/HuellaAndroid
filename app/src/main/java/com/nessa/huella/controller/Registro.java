@@ -135,8 +135,7 @@ public class Registro extends AppCompatActivity {
 
         if (result > 0) {
             Toast.makeText(this, "Actividad registrada", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(this, MainActivity.class));
-            finish();
+
         } else {
             Toast.makeText(this, "Error al insertar datos", Toast.LENGTH_SHORT).show();
         }
