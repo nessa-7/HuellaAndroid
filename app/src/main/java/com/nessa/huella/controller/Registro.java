@@ -30,7 +30,7 @@ public class Registro extends AppCompatActivity {
 
     private EditText edtCantidad;
     private Spinner spTipo;
-    private Button btnRegistrarActividad;
+    private Button btnRegistrarActividad, btnvolver;
     private TextView tvFecha, tvEmisiones;
 
     private Manager manager;
@@ -40,6 +40,17 @@ public class Registro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
+
+
+        btnvolver = findViewById(R.id.btnvolver);
+
+        btnvolver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Registro.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         edtCantidad = findViewById(R.id.edtCantidad);
         tvFecha = findViewById(R.id.tvFecha);
@@ -163,5 +174,7 @@ public class Registro extends AppCompatActivity {
             tvEmisiones.setText("0.00 kg CO₂");
         }
     }
+
+
 
 }

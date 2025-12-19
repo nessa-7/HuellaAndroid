@@ -9,6 +9,7 @@
     tools:context=".controller.Registro">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -160,5 +161,21 @@
             app:cornerRadius="80dp" />
 
     </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnvolver"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:backgroundTint="@color/blueboton"
+        android:onClick="volverMenu"
+        android:text="Volver"
+        android:textColor="@color/lila"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
